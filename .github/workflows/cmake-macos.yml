@@ -24,7 +24,7 @@ jobs:
       - name: Configure CMake
         run: mkdir cm-build; cd cm-build; cmake -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DBUILD_TESTS=ON ..
       - name: Build
-        run: cmake
+        run: make
       - name: Test
         working-directory: ${{github.workspace}}/cm-build
         run: ctest -C ${{env.BUILD_TYPE}} --output-on-failure
