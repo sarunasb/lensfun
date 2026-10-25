@@ -67,7 +67,6 @@ lfLens::lfLens (const lfLens &other)
     Type = other.Type;
 
     Mounts = NULL;
-    MountNames.clear();
     if (auto* otherMounts = other.GetMountNames())
     {
         for (int i = 0; otherMounts[i]; i++)
@@ -98,6 +97,8 @@ lfLens &lfLens::operator = (const lfLens &other)
     Type = other.Type;
 
     Mounts = NULL;
+    for (char* m: MountNames)
+        free(m);
     MountNames.clear();
 
     if (auto* otherMounts = other.GetMountNames())
@@ -1370,11 +1371,6 @@ gint _lf_lens_name_compare (const lfLens *i1, const lfLens *i2)
 
 
 //---------------------------// The C interface //---------------------------//
-
-lfLens *lf_lens_new ()
-{
-    return new lfLens ();
-}
 
 lfLens *lf_lens_create ()
 {

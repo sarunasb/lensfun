@@ -352,11 +352,45 @@
         <mount>Micro 4/3 System</mount>
         <cropfactor>2</cropfactor>
     </camera>
- 
+
+    <camera>
+        <maker>Panasonic</maker>
+        <model>DC-G95D</model>
+        <mount>Micro 4/3 System</mount>
+        <cropfactor>2</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Panasonic</maker>
+        <model>DC-G99D</model>
+        <mount>Micro 4/3 System</mount>
+        <cropfactor>2</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Panasonic</maker>
+        <model>DC-G97</model>
+        <mount>Micro 4/3 System</mount>
+        <cropfactor>2</cropfactor>
+    </camera>
 
     <camera>
         <maker>Panasonic</maker>
         <model>DC-S1</model>
+        <mount>Leica L</mount>
+        <cropfactor>1</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Panasonic</maker>
+        <model>DC-S1M2</model>
+        <mount>Leica L</mount>
+        <cropfactor>1</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Panasonic</maker>
+        <model>DC-S1M2ES</model>
         <mount>Leica L</mount>
         <cropfactor>1</cropfactor>
     </camera>
@@ -3413,6 +3447,36 @@
             <tca model="poly3" focal="70" vr="0.9999579" vb="1.0000222"/>
             <tca model="poly3" focal="85" vr="0.9998937" vb="0.9999794"/>
             <tca model="poly3" focal="105" vr="0.9998728" vb="0.9998818"/>
+        </calibration>
+    </lens>
+
+	<lens>
+        <maker>Panasonic</maker>
+        <model>Lumix S 14-28/F4-5.6</model>
+        <model lang="en">Lumix S 14-28mm f/4-5.6 Macro</model>
+        <mount>Leica L</mount>
+        <cropfactor>1.0</cropfactor>
+        <calibration>
+            <!-- Taken with Lumix DC-S1RM2 -->
+            <distortion model="ptlens" focal="14" a="0.031958" b="-0.118304" c="0.061733"/>
+            <distortion model="ptlens" focal="16" a="0.0228642" b="-0.0898582" c="0.0527534"/>
+            <distortion model="ptlens" focal="18" a="0.0094739" b="-0.0417768" c="0.0106118"/>
+            <distortion model="ptlens" focal="20" a="0.0063995" b="-0.0316348" c="0.0108464"/>
+            <distortion model="ptlens" focal="24" a="0.0071315" b="-0.0309214" c="0.0161036"/>
+            <distortion model="ptlens" focal="28" a="0.003998" b="-0.0203516" c="0.0099681"/>
+        </calibration>
+    </lens>
+
+	<lens>
+        <maker>Panasonic</maker>
+        <model>Lumix S 40/F2</model>
+        <model lang="en">Lumix S 40mm f/2</model>
+        <mount>Leica L</mount>
+        <cropfactor>1.0</cropfactor>
+        <calibration>
+			<!-- Taken with Lumix DC-S5M2 -->
+            <distortion model="ptlens" focal="40" a="0.0072134" b="-0.0163974" c="0.0124508"/>
+            <tca model="poly3" focal="40" vr="1.0000545" vb="1.0000243"/>
         </calibration>
     </lens>
 

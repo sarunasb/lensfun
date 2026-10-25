@@ -235,10 +235,25 @@
 
     <camera>
         <maker>Sony</maker>
+        <model>DSC-RX100M7A</model>
+        <model lang="en">RX100 VIIA</model>
+        <mount>sonyRX100VI</mount>
+        <cropfactor>2.66</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Sony</maker>
         <model>DSC-RX100M5A</model>
         <model lang="en">RX100 VA</model>
         <mount>sonyRX100III</mount>
         <cropfactor>2.73</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Sony</maker>
+        <model>DSC-HX200V</model>
+        <mount>sonyHX300</mount>
+        <cropfactor>5.58</cropfactor>
     </camera>
 
     <camera>
@@ -297,8 +312,24 @@
 
     <camera>
         <maker>Sony</maker>
+        <model>DSC-RX1R</model>
+        <model lang="en">RX1R</model>
+        <mount>sonyRX1</mount>
+        <cropfactor>1</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Sony</maker>
         <model>DSC-RX1RM2</model>
-        <model lang="en">RX1 R II</model>
+        <model lang="en">RX1R II</model>
+        <mount>sonyRX1</mount>
+        <cropfactor>1</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Sony</maker>
+        <model>DSC-RX1RM3</model>
+        <model lang="en">RX1R III</model>
         <mount>sonyRX1</mount>
         <cropfactor>1</cropfactor>
     </camera>
@@ -322,6 +353,13 @@
     <camera>
         <maker>Sony</maker>
         <model>ZV-1</model>
+        <mount>sonyZV1</mount>
+        <cropfactor>2.70</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Sony</maker>
+        <model>ZV-1A</model>
         <mount>sonyZV1</mount>
         <cropfactor>2.70</cropfactor>
     </camera>
@@ -1697,7 +1735,7 @@
 
     <lens>
         <maker>Carl Zeiss</maker>
-        <model>DSC-RX1RM2 &amp; compatibles</model>
+        <model>DSC-RX1R &amp; compatibles</model>
         <model lang="en">fixed lens</model>
         <model lang="de">festes Objektiv</model>
         <mount>sonyRX1</mount>

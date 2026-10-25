@@ -40,6 +40,8 @@ lfMount &lfMount::operator = (const lfMount &other)
     Name = lf_mlstr_dup (other.Name);
     Compat = NULL;
 
+    for (char* m: MountCompat)
+        free(m);
     MountCompat.clear();
     if (auto* otherMounts = other.GetCompats())
     {
@@ -91,11 +93,6 @@ bool lfMount::Check ()
 
 
 //---------------------------// The C interface //---------------------------//
-
-lfMount *lf_mount_new ()
-{
-    return new lfMount ();
-}
 
 lfMount *lf_mount_create ()
 {

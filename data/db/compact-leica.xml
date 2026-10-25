@@ -44,6 +44,32 @@
     </camera>
 
     <camera>
+        <maker>Leica</maker>
+        <model>D-Lux (Typ 109)</model>
+        <!--  Lens DC Vario-Summilux 1:1.7-2.8 / 10.9-34 ASPH. - same as Panasonic DMC-LX100/DC-LX100M2 -->
+        <mount>panasonicDMCLX100</mount>
+        <cropfactor>2.21</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Leica Camera AG</maker>
+        <maker lang="en">Leica</maker>
+        <model>D-Lux 7</model>
+        <!--  Lens DC Vario-Summilux 1:1.7-2.8 / 10.9-34 ASPH. - same as Panasonic DMC-LX100/DC-LX100M2 -->
+        <mount>panasonicDMCLX100</mount>
+        <cropfactor>2.21</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Leica Camera AG</maker>
+        <maker lang="en">Leica</maker>
+        <model>D-Lux 8</model>
+        <!--  Lens DC Vario-Summilux 1:1.7-2.8 / 10.9-34 ASPH. - same as Panasonic DMC-LX100/DC-LX100M2 -->
+        <mount>panasonicDMCLX100</mount>
+        <cropfactor>2.21</cropfactor>
+    </camera>
+
+    <camera>
         <maker>Leica Camera AG</maker>
         <maker lang="en">Leica</maker>
         <model>Leica Q (Typ 116)</model>
@@ -85,6 +111,15 @@
         <model>LEICA Q3 43</model>
         <model lang="en">Q3 43</model>
         <mount>leicaQ343</mount>
+        <cropfactor>1</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>Leica Camera AG</maker>
+        <maker lang="en">Leica</maker>
+        <model>Leica Q3 Mono</model>
+        <model lang="en">Q3 Monochrom</model>
+        <mount>leicaQ2</mount>
         <cropfactor>1</cropfactor>
     </camera>
 
@@ -149,6 +184,16 @@
         <calibration>
             <distortion model="ptlens" focal="28" a="0.018761658297732145" b="-0.09453770602458175" c="0.061490311379948114"/>
             <tca model="poly3" focal="28" vr="1.0001119" vb="1.0001816"/>
+            <vignetting model="pa" focal="28" aperture="1.7" distance="10" k1="-1.4900" k2="3.0969" k3="-2.2663"/>
+            <vignetting model="pa" focal="28" aperture="1.7" distance="1000" k1="-1.4900" k2="3.0969" k3="-2.2663"/>
+            <vignetting model="pa" focal="28" aperture="2.8" distance="10" k1="-1.3599" k2="2.8068" k3="-2.1253"/>
+            <vignetting model="pa" focal="28" aperture="2.8" distance="1000" k1="-1.3599" k2="2.8068" k3="-2.1253"/>
+            <vignetting model="pa" focal="28" aperture="4" distance="10" k1="-1.5639" k2="3.5956" k3="-2.7479"/>
+            <vignetting model="pa" focal="28" aperture="4" distance="1000" k1="-1.5639" k2="3.5956" k3="-2.7479"/>
+            <vignetting model="pa" focal="28" aperture="5.6" distance="10" k1="-1.5223" k2="3.4693" k3="-2.7102"/>
+            <vignetting model="pa" focal="28" aperture="5.6" distance="1000" k1="-1.5223" k2="3.4693" k3="-2.7102"/>
+            <vignetting model="pa" focal="28" aperture="16" distance="10" k1="-1.7381" k2="4.3277" k3="-3.4751"/>
+            <vignetting model="pa" focal="28" aperture="16" distance="1000" k1="-1.7381" k2="4.3277" k3="-3.4751"/>
         </calibration>
     </lens>
 
