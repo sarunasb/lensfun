@@ -22,10 +22,8 @@ jobs:
       - name: Install python build
         run: python -m pip install --upgrade pip build
       - name: Configure CMake
-        run: mkdir cm-build/; cd cm-build; cmake -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DBUILD_TESTS=ON ..
+        run: pwd; mkdir cm-build/; cd cm-build; cmake -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DBUILD_TESTS=ON ..
       - name: Build
-        working-directory: ${{github.workspace}}/cm-build
-        run: cmake ..
+        run: pwd; cmake --build
       - name: Test
-        working-directory: ${{github.workspace}}/cm-build
         run: ctest -C ${{env.BUILD_TYPE}} --output-on-failure
